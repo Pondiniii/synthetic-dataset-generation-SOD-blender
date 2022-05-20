@@ -2,13 +2,13 @@ Program służy do generowania syntetycznego dataseta (salient object detection)
 Dzięki temu programu wygenerowałem około 8 tysięcy zdjęć do trenowania sztucznej inteligencji. Świetnie wytrenowałem: [U-2-Net](https://github.com/xuebinqin/U-2-Net "U-2-Net") [TRACER](https://github.com/Karel911/TRACER "TRACER"). 
 
 Zrezygnowałem z biblioteki blenderproc2 ponieważ:
---> blenderproc2 jest świeży i ma sporo bugów
---> blenderproc2 nie obsługuje renderowania z przyspieszeniem GPU
---> blenderproc2 nie generuje "trimapów" do Salient object detection
+- blenderproc2 jest świeży i ma sporo bugów
+- blenderproc2 nie obsługuje renderowania z przyspieszeniem GPU
+- blenderproc2 nie generuje "trimapów" do Salient object detection
 
 Wersje użytych programów:
---> Blender 2.93.5
---> Python 3.9.7
+- Blender 2.93.5
+- Python 3.9.7
 
 Krótki opis funkcji:
 1) class CustomFormatter(logging.Formatter):
