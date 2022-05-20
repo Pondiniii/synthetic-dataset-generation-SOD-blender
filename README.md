@@ -47,6 +47,7 @@ create_folder_and_write_blend_to_it()
 
 #render_to_folder_instantly(material_type)
 
+
 albo jeżeli chcesz resizować matematycznie obiekt do odpowiednich wymiarów:
 
 resize_i_relokacja()
@@ -55,11 +56,10 @@ create_folder_and_write_blend_to_it()
 
 #render_to_folder_instantly(material_type)
 
-
 - użyj python3 run_blenderender.py aby wyrenderować zdjęcia.
 
-Wyrenderowane zdjęcie obiektu:
+
+Wyrenderowane zdjęcie obiektu oraz maska.
 ![Alt text](50_6c1541852ee6be129ae27d4aa81.jpg?raw=true "Title")
-Wyrenderowana maska obiektu:
 ![Alt text](50_6c1541852ee6be129ae27d4aa81.png?raw=true "Title")
 
