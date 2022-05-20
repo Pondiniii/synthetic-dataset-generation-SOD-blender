@@ -1,7 +1,7 @@
-Program służy do generowania syntetycznego dataseta.
-Zrezygnowałem z biblioteki blenderproc2 ponieważ:
+Program służy do generowania syntetycznego dataseta (salient object detection).
+Dzięki temu programu wygenerowałem około 8 tysięcy zdjęć do trenowania sztucznej inteligencji. Świetnie wytrenowałem modele: [U-2-Net](https://github.com/xuebinqin/U-2-Net "U-2-Net") oraz [TRACER](https://github.com/Karel911/TRACER "TRACER"). 
 
-Główne przyczyny:
+Zrezygnowałem z biblioteki blenderproc2 ponieważ:
 --> blenderproc2 jest świeży i ma sporo bugów
 --> blenderproc2 nie obsługuje renderowania z przyspieszeniem GPU
 --> blenderproc2 nie generuje "trimapów" do Salient object detection
@@ -33,32 +33,33 @@ tworzy nowy folder i zapisuje do niego pliki .blend, aby później można było 
 Sprawdza, czy folder był już wyrenderowany.
 
 Jak użyć tego repo?:
-a) zrób konto na blenderkit.com
-b) dodaj wtyczkę blender kit do blendera
-c) importuj obiekty i baw się światłem i sceną, hdrami
-d) zobacz zakładkę scripting w blenderze i sprawdź, czy ścieżki plików istnieją.
-e) zobacz skrypt run_blenderender.py i popraw ścieżki do folderów.
-f) jak chcesz od razu renderować to na końcu skryptu w zakładce scripting zakomentuj odpowiednie funkcje np. render_to_folder_instantly(material_type)
+- zrób konto na blenderkit.com
+- dodaj wtyczkę blender kit do blendera
+- importuj obiekty i baw się światłem i sceną, hdrami
+- zobacz zakładkę scripting w blenderze i sprawdź, czy ścieżki plików istnieją.
+- zobacz skrypt run_blenderender.py i popraw ścieżki do folderów.
+- jak chcesz od razu renderować to na końcu skryptu w zakładce scripting zakomentuj odpowiednie funkcje np. render_to_folder_instantly(material_type)
 czyli:
 
-'''
 #resize_i_relokacja()
 
 create_folder_and_write_blend_to_it()
 
 #render_to_folder_instantly(material_type)
-'''
+
 albo jeżeli chcesz resizować matematycznie obiekt do odpowiednich wymiarów:
-'''
+
 resize_i_relokacja()
 
 create_folder_and_write_blend_to_it()
 
 #render_to_folder_instantly(material_type)
-'''
 
-g) użyj python3 run_blenderender.py aby wyrenderować zdjęcia.
 
+- użyj python3 run_blenderender.py aby wyrenderować zdjęcia.
+
+Wyrenderowane zdjęcie obiektu:
 ![Alt text](50_6c1541852ee6be129ae27d4aa81.jpg?raw=true "Title")
+Wyrenderowana maska obiektu:
 ![Alt text](50_6c1541852ee6be129ae27d4aa81.png?raw=true "Title")
 
