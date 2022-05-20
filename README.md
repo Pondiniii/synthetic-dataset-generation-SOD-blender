@@ -35,7 +35,7 @@ Sprawdza, czy folder był już wyrenderowany.
 Jak użyć tego repo?:
 - zrób konto na blenderkit.com
 - dodaj wtyczkę blender kit do blendera
-- importuj obiekty i baw się światłem i sceną, hdrami
+- importuj obiekty i ustaw światło i HDR
 - zobacz zakładkę scripting w blenderze i sprawdź, czy ścieżki plików istnieją.
 - zobacz skrypt run_blenderender.py i popraw ścieżki do folderów.
 - jak chcesz od razu renderować to na końcu skryptu w zakładce scripting zakomentuj odpowiednie funkcje np. render_to_folder_instantly(material_type)
