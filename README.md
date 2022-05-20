@@ -59,5 +59,5 @@ create_folder_and_write_blend_to_it()
 
 g) użyj python3 run_blenderender.py aby wyrenderować zdjęcia.
 
-![Alt text](main/50_6c1541852ee6be129ae27d4aa81.jpg?raw=true "Title")
+![Alt text](50_6c1541852ee6be129ae27d4aa81.jpg?raw=true "Title")
 
