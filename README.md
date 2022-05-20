@@ -1,5 +1,5 @@
 Program służy do generowania syntetycznego dataseta (salient object detection).
-Dzięki temu programu wygenerowałem około 8 tysięcy zdjęć do trenowania sztucznej inteligencji. Świetnie wytrenowałem modele: [U-2-Net](https://github.com/xuebinqin/U-2-Net "U-2-Net") oraz [TRACER](https://github.com/Karel911/TRACER "TRACER"). 
+Dzięki temu programu wygenerowałem około 8 tysięcy zdjęć do trenowania sztucznej inteligencji. Świetnie wytrenowałem: [U-2-Net](https://github.com/xuebinqin/U-2-Net "U-2-Net") [TRACER](https://github.com/Karel911/TRACER "TRACER"). 
 
 Zrezygnowałem z biblioteki blenderproc2 ponieważ:
 --> blenderproc2 jest świeży i ma sporo bugów
