@@ -112,13 +112,13 @@ def resize_i_relokacja():
     # append nowych wyliczonych wartosci do obiektu.
     obj.dimensions = new_x, new_y, new_z
 
-def select_camera(kont):
+def select_camera(degree):
     bpy.ops.object.select_all(action='DESELECT')
     obj.select_set(True)
 
     # 0.5 to 30 stopni 1 to 60 stopni  0 to 90
     cam.rotation_mode = 'XYZ'
-    cam.rotation_euler = (kont, 0, 0)
+    cam.rotation_euler = (degree, 0, 0)
 
     item='MESH'
 
@@ -172,10 +172,10 @@ def change_material_type(name):
          bpy.data.objects['Plane'].data.materials.append(mat)
 
 def render_to_folder_instantly(material):
-    for kont in [0, 10, 20, 30, 40, 50, 60, 70, 80, 90]:
-        nazwa = str(kont) + "_" + str(hash) + "_" + str(material_type) + "_" + str(rzecz_name)+ ".png"  
+    for degree in [0, 10, 20, 30, 40, 50, 60, 70, 80, 90]:
+        nazwa = str(degree) + "_" + str(hash) + "_" + str(material_type) + "_" + str(rzecz_name)+ ".png"  
         change_material_type(material)
-        select_camera(round(math.radians(kont), 2))
+        select_camera(round(math.radians(degree), 2))
         fixing_camera_rotation(random_number())
         # chwilowa zmiana mm lens na 40 aby obiekty ladnie sie miescily
         bpy.data.cameras['Camera'].lens = 40
