@@ -1,0 +1,58 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Blender
+*.blend1
+*.blend2
+
+# Downloaded assets (large files)
+blenderkit-scraper/downloads/
+*.blend
+*.exr
+*.hdr
+
+# Generated datasets (large files)
+datasets/
+datasets_*/
+output/
+input/
+smoke_output/
+
+# Renderer progress/metadata
+batch_progress.json
+**/batch_progress.json
+
+# Scraped metadata JSON (can be large)
+blenderkit-scraper/*.json
+*.json
+
+# Rust build artifacts
+blenderkit-scraper/target/
+blenderkit-scraper/Cargo.lock
+
+# Environment variables (secrets)
+.env
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+*.txt
+
+# Test outputs
+test_*/
+# Documentation (generated)
+docs/
+*/docs/
